@@ -33,7 +33,7 @@ function errorCallback(error){
     console.log(error);
 }
 refresh();
-$scope.employee="";
+$scope.employee={};
 };
 
 $scope.remove = function(id){
