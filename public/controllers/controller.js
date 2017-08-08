@@ -63,7 +63,7 @@ $scope.update = function(){
 	$http.put('/employeelist/' + $scope.employee._id, $scope.employee).then(successCallback).catch(errorCallback);
 	function successCallback(response){
 		refresh();
-		$scope.employee="";
+		$scope.employee={};
 	}
 	function errorCallback(error){
 	    console.log(error);
